@@ -42,6 +42,11 @@ class Node(object):
         self.__attributs[key] = value
 
     def output(self, unused=""):
+        """
+        Output data for nodes
+        >>> Node("hello").output()
+        '\\thello;\\n'
+        """
         return "\t" + self.name + self.__attributs.output() + ";\n"
 
 
