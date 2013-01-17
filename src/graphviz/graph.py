@@ -1,6 +1,6 @@
 class Attributs(object):
-    def __init__(self):
-        self.__attributs = {}
+    def __init__(self, attributes={}):
+        self.__attributs = attributes
 
     def __getitem__(self, key):
         if key in self.__attributs:
@@ -11,6 +11,15 @@ class Attributs(object):
         self.__attributs[key] = value
 
     def output(self, pre="", post=""):
+        """
+        Output data for attributes in a graphviz graph
+        >>> Attributs(attributes={'key': 'value'}).output()
+        ' [key = "value"]'
+        >>> Attributs(attributes={'key': 'value'}).output(pre="lol")
+        'lol [key = "value"]'
+        >>> Attributs(attributes={'key': 'value'}).output(pre="glop", post="pas-glop")
+        'glop [key = "value"]pas-glop'
+        """
         if self.__attributs:
             items = ['%s = "%s"' % (key, value)
                      for (key, value)

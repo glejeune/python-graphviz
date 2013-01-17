@@ -15,6 +15,19 @@ Python interface to the GraphViz graphing tool
     print g.output()
     g.save("test.png")
 
+## Tests
+
+Install dependencies for tests 
+
+    
+    pip install -r requirements-test.txt
+
+
+Execute tests from root directory with 
+    
+    nosetests -v --with-doctest 
+
+
 ## Licence
 
 Copyright (c) 2013, Grégoire Lejeune
