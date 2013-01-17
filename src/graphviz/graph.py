@@ -16,7 +16,7 @@ class Attributs(object):
                      for (key, value)
                      in self.__attributs.items()]
             return "%s [%s]%s" % (pre,
-                   ', '.join(),
+                   ', '.join(items),
                 post)
         return ""
 
