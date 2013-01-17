@@ -167,7 +167,7 @@ class Graph(object):
         dot = self.__which("dot")
         if dot:
             cmd = dot + " -Tpng -o" + filename + " " + f.name
-            print Popen(cmd, stdout=PIPE, shell=True).stdout.read()
+            print(Popen(cmd, stdout=PIPE, shell=True).stdout.read())
         else:
-            print "Can't find dot"
+            print("Can't find dot")
         os.unlink(f.name)
