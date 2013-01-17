@@ -2,6 +2,8 @@
 
 Python interface to the GraphViz graphing tool 
 
+[![Build Status](https://travis-ci.org/glejeune/python-graphviz.png?branch=master)](undefined)
+
 ## Usage
 
     from graphviz.graph import Graph
