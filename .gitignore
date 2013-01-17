@@ -16,3 +16,5 @@ develop-eggs
 # Installer logs
 pip-log.txt
 
+# output of test files
+test.png
