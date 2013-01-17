@@ -1,0 +1,18 @@
+# API.keys
+*~
+*.swp
+*.py[co]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+
